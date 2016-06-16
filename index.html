@@ -2,15 +2,23 @@
 <title>Search Camp</title>
 <head>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+<!--  Prod Styles -->
+  <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/camps-styles.css">
+  <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/sessions.css">
+  <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/conferences-embed.css">
+  <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/conferences-colors.css">
+<!--  Dev Styles 
+  <link rel="stylesheet" type="text/css" href="../OpenCamps/css/camps-styles.css">
+  <link rel="stylesheet" type="text/css" href="../OpenCamps/css/sessions.css">
+  <link rel="stylesheet" type="text/css" href="../OpenCamps/css/conferences-embed.css">
+  <link rel="stylesheet" type="text/css" href="../OpenCamps/css/conferences-colors.css">
+-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <!-- place this in your head tag -->
   <script src='https://js.tito.io/v1' async></script>
   <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1' />
-
 </head>
 
-<body>
+<body class="conference search">
 
   <div class="header">
     <div class="icon-links">
@@ -26,13 +34,20 @@
     </div>
     <p class="name">Search Camp</p>
     <p class="date">Sun Jul 10, 2016</p>
+    <p class="time updates">9:30am to 5:00pm</p>
     <p class="venue">@ United Nations</p>
-    <p class="updates">A community-run conference focused on open source search technologies</p>
-    <p class="updates strong">Please send us an email at <a href="mailto:info@searchcamp.io">info@searchcamp.io</a> if you have any questions or want to get involved.</p>
-    <h2 class="updates strong">
-      <a href="http://goo.gl/forms/NfGSP8m30F">Propose your session here: http://goo.gl/forms/NfGSP8m30F</a>
-    </h2>
+
   </div>
+
+	<div class="row white">
+		<div class="row inner">
+			<p class="updates">A community-run conference focused on open source search technologies</p>
+			<p class="updates strong">Please send us an email at <a href="mailto:info@searchcamp.io">info@searchcamp.io</a> if you have any questions or want to get involved.</p>
+			<p class="updates"><a href="http://goo.gl/forms/yg5pLJ5lz3" class="button" target="_blank">Propose Your Session</a></h4>
+		</div>
+	</div>
+
+	<div id="sessions"></div>
 
   <div id="blocks">
 	  <div id="register" class="block">
@@ -44,7 +59,27 @@
     </div>
   </div>
 
+  <div id="opencamps-embed"></div>
 
+
+
+
+<!-- JS Imports -->
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="http://opencamps.org/js/oc.js"></script>
+  <script src="js/getSessionsFilter.js"></script>
+<!-- Prod JS Imports -->
+  <script src="http://opencamps.org/js/getSessions.js"></script> 
+  <script src="http://opencamps.org/js/listSessions.js"></script> 
+  <script src="http://opencamps.org/js/getConferencesBlock.js"></script> 
+  <script src="http://opencamps.org/js/listConferences.js"></script> 
+-->
+<!-- Dev JS Imports
+  <script src="../OpenCamps/js/getSessions.js"></script>
+  <script src="../OpenCamps/js/listSessions.js"></script>
+  <script src="../OpenCamps/js/getConferencesBlock.js"></script>
+  <script src="../OpenCamps/js/listConferences.js"></script>  
+-->
 
 </body>
 
