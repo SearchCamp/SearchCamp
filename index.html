@@ -1,18 +1,19 @@
 <html>
 <title>Search Camp</title>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-<!--  Prod Styles -->
+<!--  Prod Styles
   <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/camps-styles.css">
   <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/sessions.css">
   <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/conferences-embed.css">
   <link rel="stylesheet" type="text/css" href="http://opencamps.org/css/conferences-colors.css">
-<!--  Dev Styles 
+-->
+<!--  Dev Styles -->
   <link rel="stylesheet" type="text/css" href="../OpenCamps/css/camps-styles.css">
   <link rel="stylesheet" type="text/css" href="../OpenCamps/css/sessions.css">
   <link rel="stylesheet" type="text/css" href="../OpenCamps/css/conferences-embed.css">
   <link rel="stylesheet" type="text/css" href="../OpenCamps/css/conferences-colors.css">
--->
+
+  <link rel="stylesheet" type="text/css" href="css/camp-styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src='https://js.tito.io/v1' async></script>
   <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1' />
@@ -38,7 +39,7 @@
     <p class="venue">@ United Nations</p>
   </div>
 
-	<div class="row white">
+  <div id="intro" class="container light">
 		<div class="row inner">
 			<p class="updates">A community-run conference focused on open source search technologies</p>
 			<p class="updates strong">Please send us an email at <a href="mailto:info@searchcamp.io">info@searchcamp.io</a> if you have any questions or want to get involved.</p>
@@ -46,39 +47,53 @@
 		</div>
 	</div>
 
-	<div id="sessions"></div>
+	<div class="divider"></div>
 
-  <div id="blocks">
-	  <div id="register" class="block">
-  		<h4 class="block-title">Tickets</h4>    
-      <tito-widget event="search-camp-2016/search-camp-2016"></tito-widget>
-    </div>
-  
-    <div id="newsletter">
-    </div>
-  </div>
+	<div id="sessions" class="container light"></div>
+
+  <div id="tickets" class="container color">
+		<div id="blocks">
+			<div id="register" class="block">
+				<h4 class="block-title">Tickets</h4>    
+				<tito-widget event="search-camp-2016/search-camp-2016"></tito-widget>
+			</div>
+	
+			<div id="newsletter">
+			</div>
+		</div>
+	</div>
+		
+	<div id-"venue" class="container light">
+	  <div id="map">
+				<iframe id="map_contact" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5977546776085!2d-73.97020314925929!3d40.74887577922652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2591ce0874d11%3A0xc5fae28bdd3df635!2sUnited+Nations+Headquarters!5e0!3m2!1sen!2sus!4v1461024642474" class="scrolloff">
+						<a href="https://www.google.com/maps/place/United+Nations+Headquarters/@40.7488758,-73.9702031,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2591ce0874d11:0xc5fae28bdd3df635">	
+				</iframe>
+			</div>
+	</div>
+
+
+  <p class="coc"><a href="http://opencamps.org/code-of-conduct.html" target="_blank">Our Code of Conduct</a></p>
 
   <div id="opencamps-embed"></div>
   
-  <p class="coc"><a href="http://opencamps.org/code-of-conduct.html" target="_blank">Our Code of Conduct</a></p>
-
 
 <!-- JS Imports -->
   <script src="js/jquery-2.2.1.min.js"></script>
-  <script src="http://opencamps.org/js/oc.js"></script>
   <script src="js/getSessionsFilter.js"></script>
-<!-- Prod JS Imports -->
+<!-- Prod JS Imports 
   <script src="http://opencamps.org/js/getSessions.js"></script> 
   <script src="http://opencamps.org/js/listSessions.js"></script> 
   <script src="http://opencamps.org/js/getConferencesBlock.js"></script> 
   <script src="http://opencamps.org/js/listConferences.js"></script> 
-
-<!-- Dev JS Imports
+  <script src="http://opencamps.org/js/oc.js"></script>
+-->
+<!-- Dev JS Imports-->
   <script src="../OpenCamps/js/getSessions.js"></script>
   <script src="../OpenCamps/js/listSessions.js"></script>
   <script src="../OpenCamps/js/getConferencesBlock.js"></script>
   <script src="../OpenCamps/js/listConferences.js"></script>  
--->
+  <script src="../OpenCamps/js/oc.js"></script>
+
 
 </body>
 
